@@ -103,9 +103,9 @@ Please answer the following questions and submit in your repo for the second ass
     - Please explain why the file size reported by the `ls` command was 128 bytes after adding student with ID=1, 256 after adding student with ID=3, and 4160 after adding the student with ID=64? 
 
         > **ANSWER:** The ls command shows the logical size of the file, which is how much space the file could take based on the student IDs. Each student record is 64 bytes. So:
-    ID=1: (1 * 64) + 64 = 128 bytes (space for the first record)
+    ID=1: (1 * 64) + 64 = 128 bytes (space for the first record),
     
-    ID=3: (3 * 64) + 64 = 256 bytes (because we're jumping to ID 3)
+    ID=3: (3 * 64) + 64 = 256 bytes (because we're jumping to ID 3), and
 
     ID=64: (64 * 64) + 64 = 4160 bytes (since we're adding the 64th record)
 
